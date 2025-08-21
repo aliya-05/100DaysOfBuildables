@@ -18,7 +18,7 @@ Completing this track equips me with:
 
 ## Medium Articles 
 Read all the articles I published on my research readings and key learnings:
-1. Demystifying AI, ML, DL, and GenAI: Key Concepts and Distinctions-- 
+1. Demystifying AI, ML, DL, and GenAI: Key Concepts and Distinctions—
    https://medium.com/@aliyadotsrfz/demystifying-ai-ml-dl-and-genai-key-concepts-and-distinctions-c3866912f784 
 
 ## Connect 
