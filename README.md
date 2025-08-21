@@ -1,6 +1,13 @@
 # 100DaysOfBuildables
 Welcome to my **100 Days of Buildables** repository! This space documents my journey during my fellowship at Buildables in the ML/DL track, where I undertake a series of technical and engineering projects over 100 days. Each project showcases my learning, experimentation, and hands-on experience in developing practical, innovative solutions.
 
+## Table of Contents 
+- [Introduction](#introduction)
+- [Setup Instructions](#setup-instructions)
+- [Projects](#projects)
+- [Medium Articles](#medium-articles)
+- [Connect](#connect)
+
 ## Introduction 
 As a Deep Learning/Machine Fellow, I explore the world of algorithms and data to uncover patterns, make predictions, and unlock insights.
 Completing this track equips me with:
@@ -8,7 +15,7 @@ Completing this track equips me with:
 - develop machine learning models to solve real-world problems in various fields
 - explore advanced neural networks to tackle complex tasks like image recognition and natural language processing
 - develop machine learning models to solve real-world problems in various fields
-- learn data preprocessing, model evaluation, and best practices for robust machine learning models 
+- learn data preprocessing, model evaluation, and best practices for robust machine learning models
 
 ## Setup Instructions 
 ---
