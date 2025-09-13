@@ -19,7 +19,7 @@ st.markdown("This dashboard lets you explore the **House Prices Dataset**, run E
 
 @st.cache_data 
 def load_data():
-    df = pd.read_csv("house_prices_cleaned.csv")
+    df = pd.read_csv("jupyter-notebooks/house_prices_cleaned.csv")
     return df
     
 df = load_data()
