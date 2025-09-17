@@ -21,9 +21,9 @@ st.markdown("This dashboard lets you explore the **Heart Disease UCI Dataset**, 
 
 # Load dataset
 
-@st.cache_data 
+@st.cache_data
 def load_data():
-    df = pd.read_csv("heart_disease_uci.csv")
+    df = pd.read_csv("jupyter-notebooks/heart_disease_uci.csv")
     return df
 
 df = load_data()
