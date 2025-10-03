@@ -12,7 +12,7 @@ col_names = ["Class", "Alcohol", "Malic_acid", "Ash", "Alcalinity_of_ash", "Magn
              "Total_phenols", "Flavanoids", "NonFlavanoid_phenols", "Proanthocyanins",
              "Color_intensity", "Hue", "OD280/OD315_of_diluted_wines", "Proline"]
 
-df = pd.read_csv("wine.data", names=col_names)
+df = pd.read_csv("jupyter-notebooks/wine.data", names=col_names)
 
 # Features and labels
 X = df.drop("Class", axis=1)
