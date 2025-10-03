@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import os 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
@@ -8,11 +9,15 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
 # Load dataset
+
+BASE_DIR = os.path.dirname(__file__)  # directory of this script
+dataset_path = os.path.join(BASE_DIR, "wine.data")
+
 col_names = ["Class", "Alcohol", "Malic_acid", "Ash", "Alcalinity_of_ash", "Magnesium",
              "Total_phenols", "Flavanoids", "NonFlavanoid_phenols", "Proanthocyanins",
              "Color_intensity", "Hue", "OD280/OD315_of_diluted_wines", "Proline"]
 
-df = pd.read_csv("C:/Users/Aliya Sarfaraz/OneDrive/Desktop/Softwares/git_github/100DaysOfBuildables/jupyter-notebooks/wine.data", names=col_names)
+df = pd.read_csv(dataset_path, names=col_names)
 
 # Features and labels
 X = df.drop("Class", axis=1)
