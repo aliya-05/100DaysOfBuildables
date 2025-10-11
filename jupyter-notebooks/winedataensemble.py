@@ -29,6 +29,10 @@ y = df["Class"]
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+# Fix for XGBoost: convert labels to int
+y_train = y_train.astype(int) - 1
+y_test = y_test.astype(int) - 1
+
 # Standardize for models that need it
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
@@ -57,7 +61,7 @@ model_choice = st.sidebar.selectbox(
     ["Logistic Regression", "Decision Tree", "KNN", "Random Forest", "XGBoost"]
 )
 
-st.title("🍷 Ensemble Learning on Wine Dataset")
+st.title("Ensemble Learning on Wine Dataset")
 
 # Sidebar - input features
 st.sidebar.subheader("Input Wine Features")
