@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
-import joblib 
 
 # Load trained model 
-model = joblib.load("tuned_random_forest.pkl")
+import os
+import joblib
+
+current_dir = os.path.dirname(__file__)
+model_path = os.path.join(current_dir, "tuned_random_forest.pkl")
+model = joblib.load(model_path)
 
 st.title("Titanic Passenger Class Predictor")
 st.write("Enter passenger details to predict their travel class (1st, 2nd or 3rd):")
